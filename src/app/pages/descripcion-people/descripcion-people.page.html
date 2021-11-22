@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="tabs/people"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="color: gold;background-color: black;">{{people.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <div text-center>
+     <ion-img width="180" height="180" src="assets/img/6.png"></ion-img>  
+  </div>
+</ion-content>
+
+<ion-content>
+ <h1 style="text-align: center;">{{people.name}}</h1>
+ <ion-card>
+ <ion-item>
+ <ion-icon style="color: crimson;" name = "people-outline" slot="start"></ion-icon>
+ <ion-label>{{people.birth_year}}</ion-label>
+ </ion-item>
+ <ion-card-content>
+   <ion-grid>
+     <ion-row>
+       <ion-col>
+         <b>COLOR DE OJOS</b>
+         <p>{{people.eye_color}}</p>
+       </ion-col>
+       <ion-col>
+        <b>GENERO</b>
+        <p>{{people.gender}}</p>
+      </ion-col>
+      <ion-col>
+        <b>COLOR DE CABELLO</b>
+        <p>{{people.hair_color}}</p>
+      </ion-col>
+      <ion-col>
+        <b>ALTURA</b>
+        <p>{{people.height}}</p>
+      </ion-col>
+      <ion-col>
+        <b>MASA</b>
+        <p>{{people.mass}}</p>
+      </ion-col>
+     </ion-row>
+   </ion-grid>
+ </ion-card-content>
+</ion-card>
+</ion-content>
+

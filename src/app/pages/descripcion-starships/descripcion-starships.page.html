@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="tabs/starships"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="color: gold;background-color: black;">{{starships.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <div text-center>
+     <ion-img width="180" height="180" src="assets/img/7.png"></ion-img>  
+  </div>
+</ion-content>
+
+<ion-content>
+ <h1 style="text-align: center;">{{starships.name}}</h1>
+ <ion-card>
+ <ion-item>
+ <ion-icon style="color: darkred;" name = "rocket" slot="start"></ion-icon>
+ <ion-label>{{starships.name}}</ion-label>
+ </ion-item>
+
+ <ion-card-content>
+   <ion-grid>
+     <ion-row>
+       <ion-col>
+         <b>TRIPULACION</b>
+         <p>{{starships.crew}}</p>
+       </ion-col>
+       <ion-col>
+        <b>CAPACIDAD DE CARGA</b>
+        <p>{{starships.cargo_capacity}}</p>
+      </ion-col>
+      <ion-col>
+        <b>CREADA</b>
+        <p>{{starships.created}}</p>
+      </ion-col>
+      <ion-col>
+        <b>EDITADA</b>
+        <p>{{starships.edited}}</p>
+      </ion-col>
+      <ion-col>
+        <b>LARGO</b>
+        <p>{{starships.length}}</p>
+      </ion-col>
+     </ion-row>
+   </ion-grid>
+ </ion-card-content>
+</ion-card>
+</ion-content>
+
+

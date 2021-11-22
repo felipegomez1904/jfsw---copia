@@ -1,0 +1,12 @@
+<ion-grid>
+  <ion-row>
+    <ion-col size = "12" size-md = "6" size-lg = "4" *ngFor = "let item of (obtenApi | async)?.results">
+      <ion-list>
+       <ion-item (click) = "showItem(item)">
+         <ion-label style="color: darkcyan;">{{item.name}}</ion-label>
+         <ion-icon style="color: greenyellow;" [name]= "icon" slot="start"></ion-icon>
+       </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-grid>
